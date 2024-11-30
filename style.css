@@ -1,0 +1,50 @@
+/* Grundlegendes Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #476c57;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 20px 0;
+    color: #333;
+}
+
+/* Kalender-Container */
+#kalender {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 Spalten */
+    gap: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Türchen-Styling */
+.tuerchen {
+    background-color: #BB2528;
+    border: 2px solid #165B33;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+/* Hover-Effekt */
+.tuerchen:hover {
+    background-color: #ffe066;
+    transform: scale(1.1);
+}
+
+/* Geöffnetes Türchen */ 
+.tuerchen.geoeffnet {
+    background-color: #eee;
+    color: #aaa;
+    cursor: default;
+}
